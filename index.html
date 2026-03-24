@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KD Arts Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+<!-- Navbar -->
+<header class="flex justify-between items-center p-5 bg-gray-900 shadow-xl sticky top-0 z-50">
+  <div class="flex items-center gap-3">
+    <img src="logo.png" alt="KD Logo" class="w-10 h-10 rounded-full">
+    <h1 class="text-2xl font-bold tracking-wider">KD ARTS</h1>
+  </div>
+  <nav class="space-x-6 hidden md:block">
+    <a href="#home" class="hover:text-blue-400">Home</a>
+    <a href="#services" class="hover:text-blue-400">Services</a>
+    <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+    <a href="#youtube" class="hover:text-blue-400">YouTube</a>
+    <a href="#contact" class="hover:text-blue-400">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="text-center py-24 px-6">
+  <img src="logo.png" class="mx-auto w-24 h-24 mb-6 rounded-full" alt="Channel Logo">
+  <h2 class="text-5xl font-extrabold mb-6">KD Arts YouTube Platform</h2>
+  <p class="text-gray-400 max-w-xl mx-auto mb-8">Creative Art, Editing Tutorials & Digital Content</p>
+  <a href="https://www.youtube.com/@kdarts1" target="_blank" class="bg-red-600 px-8 py-3 rounded-2xl hover:bg-red-700">Visit Channel</a>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-gray-900 p-6 rounded-2xl">
+      <h3 class="text-xl font-bold mb-3">Thumbnail Design</h3>
+      <p class="text-gray-400">High CTR YouTube thumbnails</p>
+    </div>
+    <div class="bg-gray-900 p-6 rounded-2xl">
+      <h3 class="text-xl font-bold mb-3">Photo Manipulation</h3>
+      <p class="text-gray-400">Creative Photoshop edits</p>
+    </div>
+    <div class="bg-gray-900 p-6 rounded-2xl">
+      <h3 class="text-xl font-bold mb-3">Video Editing</h3>
+      <p class="text-gray-400">Professional video content</p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-20 px-6 bg-gray-900">
+  <h2 class="text-3xl font-bold text-center mb-12">My Work</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <img src="img1.jpg" class="rounded-xl">
+    <img src="img2.jpg" class="rounded-xl">
+    <img src="img3.jpg" class="rounded-xl">
+  </div>
+</section>
+
+<!-- YouTube Section -->
+<section id="youtube" class="py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-6">Latest Videos</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed?listType=user_uploads&list=kdarts1"></iframe>
+    <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed?listType=user_uploads&list=kdarts1"></iframe>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-6">Contact</h2>
+  <input type="text" placeholder="Name" class="p-3 m-2 bg-gray-900 rounded">
+  <input type="email" placeholder="Email" class="p-3 m-2 bg-gray-900 rounded">
+  <br>
+  <textarea placeholder="Message" class="p-3 m-2 bg-gray-900 rounded"></textarea>
+  <br>
+  <button onclick="sendMsg()" class="bg-blue-600 px-6 py-3 rounded-xl mt-4">Send</button>
+</section>
+
+<footer class="text-center p-6 bg-gray-900">
+  <p>© KD ARTS 2026 | YouTube: @kdarts1</p>
+</footer>
+
+<script>
+function sendMsg(){
+  alert('Message sent successfully!');
+}
+</script>
+
+</body>
+</html>
